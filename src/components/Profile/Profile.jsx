@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -18,15 +18,21 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
       <ul className="stats flex justify-around bg-gray-100 p-4 rounded-lg">
         <li className="text-center">
           <span className="label block text-gray-500">Followers</span>
-          <span className="quantity block text-lg font-bold">{stats.followers}</span>
+          <span className="quantity block text-lg font-bold">
+            {stats.followers}
+          </span>
         </li>
         <li className="text-center">
           <span className="label block text-gray-500">Views</span>
-          <span className="quantity block text-lg font-bold">{stats.views}</span>
+          <span className="quantity block text-lg font-bold">
+            {stats.views}
+          </span>
         </li>
         <li className="text-center">
           <span className="label block text-gray-500">Likes</span>
-          <span className="quantity block text-lg font-bold">{stats.likes}</span>
+          <span className="quantity block text-lg font-bold">
+            {stats.likes}
+          </span>
         </li>
       </ul>
     </div>

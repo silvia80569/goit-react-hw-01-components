@@ -18,9 +18,11 @@ const TransactionHistory = ({ items }) => {
         </tr>
       </thead>
       <tbody>
-        {items.map(({ id, type, amount, currency },index) => (
-          <tr key = { id } 
-          className = {`border-t ${index % 2 === 0 ? 'bg-gray-200' : ''}`}>
+        {items.map(({ id, type, amount, currency }, index) => (
+          <tr
+            key={id}
+            className={`border-t ${index % 2 === 0 ? 'bg-gray-200' : ''}`}
+          >
             <td className="p-4 text-gray-700">{type}</td>
             <td className="p-4 text-gray-700">{amount}</td>
             <td className="p-4 text-gray-700">{currency}</td>
